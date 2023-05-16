@@ -1,0 +1,23 @@
+{
+  "name": "nikki-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-man2004/nikki-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-man2004/nikki-landing-page/issues"
+  },
+  "homepage": "https://github.com/the-man2004/nikki-landing-page#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
