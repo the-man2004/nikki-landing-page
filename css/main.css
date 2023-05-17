@@ -16,6 +16,8 @@ body {
   font-family: "Roboto";
   min-height: 100vh;
 
+  overflow-x: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,128 +28,4 @@ body {
   max-width: 1500px;
 
   position: relative;
-}
-
-/* Nav styling */
-.nav {
-  width: 100%;
-  max-width: 1500px;
-  height: 75px;
-  padding: 0 50px;
-
-  position: fixed;
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: #fff;
-}
-
-.nav h2 {
-  font-size: 2rem;
-  color: var(--color-dark);
-}
-
-.nav h2::first-letter {
-  font-size: 2.4rem;
-  color: var(--color-red);
-}
-
-.nav ul {
-  display: flex;
-}
-
-.nav ul li {
-  list-style: none;
-  margin-left: 20px;
-}
-
-.btn-link {
-  text-decoration: none;
-  color: var(--color-dark);
-  font-weight: 600;
-
-  margin: 0 10px;
-  padding: 5px 0px;
-
-  border-bottom: 1px solid #fff;
-}
-
-.btn-link:hover,
-.btn-link:focus,
-.active {
-  border-bottom: 2px solid var(--color-red);
-}
-
-/* Hero styling */
-.hero {
-  padding: 0 50px;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-
-  /* background-color: red; */
-}
-
-.hero-text {
-  /* border: 2px solid var(--color-dark); */
-
-  width: 65%;
-  height: auto;
-  position: absolute;
-  transform: translateY(-30%);
-}
-
-.hero-title {
-  font-size: 3.5rem;
-}
-.hero-title::first-letter {
-  font-size: 4rem;
-}
-
-.hero-subtext {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 60%;
-  line-height: 1.5rem;
-  font-size: 1.2rem;
-}
-.hero-subtext::first-letter {
-  font-size: 1.5rem;
-  color: var(--color-red);
-}
-
-.hero-text .btn {
-  padding: 5px 15px;
-
-  font-size: 1.5rem;
-  color: #fff;
-  background: var(--color-red);
-
-  border: 2px solid var(--color-dark-red);
-  border-radius: 19px;
-
-  transition: all 200ms ease;
-}
-
-.hero-text .btn a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.hero-text .btn:hover,
-.hero-text .btn:focus {
-  transform: scale(1.1);
-  /* padding: 10px; */
-}
-
-.hero img {
-  /* border: 2px solid var(--color-dark); */
-  width: 50%;
-
-  position: absolute;
-  transform: translate(80%, 30%);
 }

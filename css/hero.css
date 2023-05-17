@@ -1,0 +1,91 @@
+/* Hero styling */
+.hero {
+  padding: 0 50px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+.hero-text {
+  /* border: 2px solid var(--color-dark); */
+
+  width: 65%;
+  height: auto;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  position: relative;
+  width: 150%;
+}
+.hero-title::first-letter {
+  font-size: 4rem;
+}
+
+.hero-subtext {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 60%;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hero-subtext::first-letter {
+  font-size: 1.5rem;
+  color: var(--color-red);
+}
+.two {
+  margin-top: -20px;
+}
+.two::first-letter {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+}
+
+.hero-text .btn {
+  padding: 5px 15px;
+
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--color-red);
+
+  border: 2px solid var(--color-dark-red);
+  border-radius: 19px;
+
+  transition: all 150ms ease;
+}
+
+.hero-text .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-text .btn:hover,
+.hero-text .btn:focus,
+.hero-text .btn a:hover,
+.hero-text .btn a:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.hero img {
+  /* border: 2px solid var(--color-dark); */
+  width: 50%;
+  max-width: 600px;
+  cursor: pointer;
+
+  position: relative;
+  justify-self: flex-end;
+  /* position: absolute; */
+  /* transform: translate(80%, 30%); */
+  transform: translateY(30%);
+  transition: all 150ms ease-in-out;
+}
+.hero img:hover {
+  /* transform: translate(80%, 30%); */
+  transform: scale(1.04) translateY(30%);
+}
