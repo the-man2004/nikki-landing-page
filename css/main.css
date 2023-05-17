@@ -2,6 +2,8 @@
 
 :root {
   --color-dark: rgb(32, 32, 32);
+  --color-darkish: rgb(42, 42, 42);
+  --color-gray: rgb(129, 129, 129);
   --color-red: rgb(248, 69, 69);
   --color-dark-red: rgb(255, 70, 70);
 }
