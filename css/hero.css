@@ -89,3 +89,43 @@
   /* transform: translate(80%, 30%); */
   transform: scale(1.04) translateY(30%);
 }
+
+/* Media query */
+@media (max-width: 930px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-title::first-letter {
+    font-size: 2.7rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-title::first-letter {
+    font-size: 2.1rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .hero-subtext::first-letter {
+    font-size: 1rem;
+  }
+
+  .two {
+    margin-bottom: 20px;
+  }
+
+  .hero-text .btn {
+    font-size: 1rem;
+  }
+}
