@@ -1,9 +1,19 @@
 /* Footer styling */
 footer {
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
   background: var(--color-darkish);
 }
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* .footer-container {
+  width: 100%;
+  max-width: 1500px;
+} */
 
 .footer-links {
   display: flex;
@@ -13,6 +23,7 @@ footer {
 .footer-link {
   margin-right: 75px;
   color: #fff;
+  padding: 0 50px;
 }
 
 .footer-links ul {
@@ -35,6 +46,7 @@ footer {
 
 .social-links {
   margin-top: 40px;
+  padding: 0 50px;
 }
 
 .social-links a {
@@ -75,5 +87,13 @@ footer {
 @media (max-width: 400px) {
   footer {
     padding: 50px 25px;
+  }
+
+  .footer-link {
+    padding: 0 0;
+  }
+
+  .social-links {
+    padding: 0 0;
   }
 }
