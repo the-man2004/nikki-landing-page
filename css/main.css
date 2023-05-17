@@ -3,6 +3,7 @@
 :root {
   --color-dark: rgb(32, 32, 32);
   --color-red: rgb(248, 69, 69);
+  --color-dark-red: rgb(255, 70, 70);
 }
 
 * {
@@ -22,19 +23,26 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1500px;
+
+  position: relative;
 }
 
+/* Nav styling */
 .nav {
   width: 100%;
+  max-width: 1500px;
   height: 75px;
   padding: 0 50px;
+
+  position: fixed;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  /* border-bottom: 2px solid var(--color-dark); */
+  background-color: #fff;
 }
 
 .nav h2 {
@@ -71,4 +79,75 @@ body {
 .btn-link:focus,
 .active {
   border-bottom: 2px solid var(--color-red);
+}
+
+/* Hero styling */
+.hero {
+  padding: 0 50px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+.hero-text {
+  /* border: 2px solid var(--color-dark); */
+
+  width: 65%;
+  height: auto;
+  position: absolute;
+  transform: translateY(-30%);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+.hero-title::first-letter {
+  font-size: 4rem;
+}
+
+.hero-subtext {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 60%;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.hero-subtext::first-letter {
+  font-size: 1.5rem;
+  color: var(--color-red);
+}
+
+.hero-text .btn {
+  padding: 5px 15px;
+
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--color-red);
+
+  border: 2px solid var(--color-dark-red);
+  border-radius: 19px;
+
+  transition: all 200ms ease;
+}
+
+.hero-text .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-text .btn:hover,
+.hero-text .btn:focus {
+  transform: scale(1.1);
+  /* padding: 10px; */
+}
+
+.hero img {
+  /* border: 2px solid var(--color-dark); */
+  width: 50%;
+
+  position: absolute;
+  transform: translate(80%, 30%);
 }
