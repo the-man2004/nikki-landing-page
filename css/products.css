@@ -1,33 +1,34 @@
 /* Products styling */
 #product-h2 {
-  margin-top: 100px;
-  padding-left: 50px;
+  margin-top: 7em;
+  padding-left: 1.5em;
 
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .products {
   min-height: 100vh;
-  margin: 50px 0 100px 0;
-  padding: 0 50px;
+  margin: 3em 0 7em 0;
+  padding: 0 3em;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 35px;
+  gap: 2em;
 }
 
 #products {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 7em;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2),
+    0 0.3em 1.2em 0 rgba(0, 0, 0, 0.19);
   transition: all 150ms ease-in-out;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 1.2em;
 
   cursor: pointer;
 }
@@ -38,30 +39,27 @@
 
 .product img {
   width: 100%;
-  padding: 25px;
-
-  /* border-bottom: 2px solid var(--color-dark); */
+  padding: 1.7em;
 }
 
 .shoe-info {
-  margin: 0 0 15px 15px;
+  margin: 0 0 1em 1em;
 }
 
 .shoe-name {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 
 /* Media query */
 @media (max-width: 750px) {
-  #product-h2 {
-    padding-left: 100px;
-    font-size: 1.8rem;
+  .products {
+    padding: 0 7em;
   }
 
-  .products {
-    padding: 0 100px;
+  #product-h2 {
+    padding-left: 3.4em;
   }
 }
 
@@ -69,10 +67,15 @@
   .products {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
 
-    padding: 0 35px;
+    padding: 0 2em;
   }
 
   .product {
     margin: 0;
+  }
+
+  #product-h2 {
+    padding-left: 1em;
+    margin-top: 3em;
   }
 }

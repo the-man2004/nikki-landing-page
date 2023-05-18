@@ -1,60 +1,55 @@
 /* Hero styling */
 .hero {
-  padding: 0 50px;
+  padding: 0 3em;
   min-height: 100vh;
 
   display: flex;
   align-items: center;
-
-  /* background-color: red; */
 }
 
 .hero-text {
-  /* border: 2px solid var(--color-dark); */
-
   width: 65%;
-  height: auto;
   position: relative;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   position: relative;
   width: 150%;
 }
 .hero-title::first-letter {
-  font-size: 4rem;
+  font-size: 1.1em;
 }
 
 .hero-subtext {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 1.3em;
+  margin-bottom: 2.2em;
   width: 60%;
-  line-height: 1.5rem;
-  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-size: 1.2em;
 }
 
 .hero-subtext::first-letter {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: var(--color-red);
 }
 .two {
-  margin-top: -20px;
+  margin-top: -1.3em;
 }
 .two::first-letter {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: var(--color-dark);
 }
 
 .hero-text .btn {
-  padding: 5px 15px;
+  padding: 0.3em 1em;
 
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #fff;
   background: var(--color-red);
 
   border: 2px solid var(--color-dark-red);
-  border-radius: 19px;
+  border-radius: 1.2em;
 
   transition: all 150ms ease;
 }
@@ -73,92 +68,50 @@
 }
 
 .hero img {
-  /* border: 2px solid var(--color-dark); */
   width: 50%;
   max-width: 600px;
-  cursor: pointer;
+  height: auto;
 
   position: relative;
   justify-self: flex-end;
-  /* position: absolute; */
-  /* transform: translate(80%, 30%); */
   transform: translateY(30%);
   transition: all 150ms ease-in-out;
-}
-.hero img:hover {
-  /* transform: translate(80%, 30%); */
-  transform: scale(1.04) translateY(30%);
 }
 
 /* Media query */
 @media (max-width: 930px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  .hero-title::first-letter {
-    font-size: 2.7rem;
-  }
-
-  .hero-subtext {
-    font-size: 1rem;
+  .hero {
+    font-size: 13px;
   }
 }
 
-@media (max-width: 600px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-title::first-letter {
-    font-size: 2.1rem;
-  }
-
-  .hero-subtext {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .hero-subtext::first-letter {
-    font-size: 1rem;
-  }
-
-  .two {
-    margin-bottom: 20px;
-  }
-
-  .hero-text .btn {
-    font-size: 1rem;
+@media (max-width: 700px) {
+  .hero {
+    font-size: 11px;
   }
 }
 
 @media (max-width: 560px) {
   .hero {
     flex-direction: column;
+    align-items: baseline;
     justify-content: center;
   }
 
-  .hero-text {
-    width: 100%;
-  }
-  .hero-title {
-    font-size: 1.5rem;
-    position: relative;
-
-    inline-size: auto;
-  }
-  .hero-title::first-letter {
-    font-size: 1.7rem;
+  .hero-text,
+  .hero-title,
+  .hero-subtext {
+    width: auto;
   }
 
   .hero img {
-    transform: translateY(0%);
-    width: 60%;
-    height: auto;
-    align-self: flex-end;
+    display: block;
+    width: 75%;
   }
 }
 
 @media (max-width: 400px) {
   .hero {
-    padding: 0 25px;
+    font-size: 10px;
   }
 }
