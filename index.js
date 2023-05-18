@@ -1,5 +1,12 @@
-console.log("Hello world");
+const nav = document.querySelector("nav");
+const btnLinks = document.querySelectorAll(".btn-link");
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
+nav.addEventListener("click", (e) => {
+  const target = e.target;
+
+  if (target.classList.contains("btn-link")) {
+    btnLinks.forEach((link) => link.classList.remove("active"));
+
+    target.classList.add("active");
+  }
+});
